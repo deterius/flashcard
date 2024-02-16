@@ -1,0 +1,27 @@
+[
+    {
+      "id": "1",
+      "english": "Apple",
+      "chinese": "苹果",
+      "pinyin": "ping1guo3",
+      "correct_count": 0,
+      "incorrect_count": 0
+    },
+    {
+      "id": "2",
+      "english": "banana",
+      "chinese": "香蕉",
+      "pinyin": "xiangjiao",
+      "correct_count": 0,
+      "incorrect_count": 0
+    },
+    {
+      "id": "3",
+      "english": "Potato",
+      "chinese": "土豆（马铃薯）",
+      "pinyin": "tudou (malingshu)",
+      "correct_count": 0,
+      "incorrect_count": 0
+    }
+  ]
+  

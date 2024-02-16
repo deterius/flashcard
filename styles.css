@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .mood-emoji-btn {
+        @apply w-8 h-8 m-2  items-center text-xs hover:scale-125 transition duration-300 ease-in-out transform;
+    }
+    .selected-emoji-btn {
+        @apply scale-125 opacity-100
+    }
+    .non-selected-emoji-btn {
+        @apply scale-75 opacity-50
+    }
+    .filter-btn {
+        @apply border-slate-600 text-slate-900 text-sm rounded bg-slate-300 p-1 hover:bg-slate-900 hover:text-white
+    }
+    .selected-filter-btn {
+        @apply border-slate-600 text-white text-sm rounded bg-slate-900 p-1  hover:text-slate-500
+    }
+    .each-cards {
+        @apply bg-yellow-50
+    }
+    .lng-btn {
+        @apply mx-1 border-slate-600 text-slate-900 text-xs rounded bg-slate-300 p-1 hover:bg-slate-900 hover:text-white
+    }
+    .lng-btn-down {
+        @apply mx-1 border-slate-400 text-slate-300 text-xs rounded bg-slate-900 p-1 hover:bg-slate-900 hover:text-white
+    }
+    .card-view {
+        @apply hover:text-slate-400 flex flex-col justify-center items-center max-w-16
+    }
+    .section-div {
+        @apply w-full max-w-96 min-w-96 mx-auto 
+    }
+    
+}

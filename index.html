@@ -1,0 +1,278 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./compiled.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/site.webmanifest">
+
+    <title>Flash-y Card</title>
+    
+</head>
+<body class=" bg-gray-100 ">
+    <div class="absolute top-0 left-0 w-full h-20 bg-slate-600 text-white flex flex-row px-4 items-center gap">
+        <div class="flex flex-row items-center justify-center">
+            <svg
+                width="36"
+                height="36"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                >
+                <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M14.364 13.1214C15.2876 14.045 15.4831 15.4211 14.9504 16.5362L16.4853 18.0711C16.8758 18.4616 16.8758 19.0948 16.4853 19.4853C16.0948 19.8758 15.4616 19.8758 15.0711 19.4853L13.5361 17.9504C12.421 18.4831 11.045 18.2876 10.1213 17.364C8.94975 16.1924 8.94975 14.2929 10.1213 13.1214C11.2929 11.9498 13.1924 11.9498 14.364 13.1214ZM12.9497 15.9498C13.3403 15.5593 13.3403 14.9261 12.9497 14.5356C12.5592 14.145 11.9261 14.145 11.5355 14.5356C11.145 14.9261 11.145 15.5593 11.5355 15.9498C11.9261 16.3403 12.5592 16.3403 12.9497 15.9498Z"
+                    fill="currentColor"
+                />
+                <path d="M8 5H16V7H8V5Z" fill="currentColor" />
+                <path d="M16 9H8V11H16V9Z" fill="currentColor" />
+                <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M4 4C4 2.34315 5.34315 1 7 1H17C18.6569 1 20 2.34315 20 4V20C20 21.6569 18.6569 23 17 23H7C5.34315 23 4 21.6569 4 20V4ZM7 3H17C17.5523 3 18 3.44772 18 4V20C18 20.5523 17.5523 21 17 21H7C6.44772 21 6 20.5523 6 20V4C6 3.44772 6.44771 3 7 3Z"
+                    fill="currentColor"
+                />
+                </svg>
+                <h1 class="text-xl">Flashy Card</h1>
+        </div>
+    </div>
+    <div class="flex flex-col gap-3 justify-center items-center pt-36"> 
+        <section id="logged-out-view" class="">
+            <div id="card" class=" flex flex-col rounded bg-white overflow-auto" >
+            
+                <div class="">
+                    <button id="google-btn" class=" py-3 text-white w-full text-sm bg-green-600 hover:bg-green-100 hover:text-green-900">Sign in with Google</button>
+                    <div class="flex flex-col">
+                        <input id="email-input" type="email" placeholder="Email" class="p-5 my-1 text-center border border-gray-300">
+                        <input id="password-input" type="password" placeholder="Password" class="p-5 my-1 text-center border border-gray-300">
+                        <button id="sign-in-btn" class=" py-3 text-white w-full text-sm bg-red-600 hover:bg-red-100 hover:text-red-900">Sign-in</button>
+                        <button id="register-btn" class="py-3 text-white w-full text-sm bg-gray-600 hover:bg-gray-300 hover:text-gray-900">Register</button>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </section>
+        <section id="logged-in-view" class="hidden max-w-md">
+            <div id="top-nav" class="mb-2 mt-0">
+                <nav class="flex justify-between gap-3">
+                    <button id="study-card-view-btn"class="card-view">
+                        <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            >
+                            <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M7 14C8.10457 14 9 13.1046 9 12C9 10.8954 8.10457 10 7 10C5.89543 10 5 10.8954 5 12C5 13.1046 5.89543 14 7 14ZM10.4649 10C9.77325 8.8044 8.48056 8 7 8C5.13616 8 3.57006 9.27477 3.12602 11H2C1.44772 11 1 11.4477 1 12C1 12.5523 1.44772 13 2 13H3.12602C3.57006 14.7252 5.13616 16 7 16C9.20914 16 11 14.2091 11 12H13C13 14.2091 14.7909 16 17 16C18.8638 16 20.4299 14.7252 20.874 13H22C22.5523 13 23 12.5523 23 12C23 11.4477 22.5523 11 22 11H20.874C20.4299 9.27477 18.8638 8 17 8C15.5194 8 14.2267 8.8044 13.5351 10H10.4649ZM15 12C15 13.1046 15.8954 14 17 14C18.1046 14 19 13.1046 19 12C19 10.8954 18.1046 10 17 10C15.8954 10 15 10.8954 15 12Z"
+                                fill="currentColor"
+                            />
+                        </svg>
+                        <p class="text-xs">study cards</p>
+                    </button>
+                    <button id="add-card-view-btn"class="card-view">
+                        <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            >
+                            <path
+                                d="M12 6C12.5523 6 13 6.44772 13 7V11H17C17.5523 11 18 11.4477 18 12C18 12.5523 17.5523 13 17 13H13V17C13 17.5523 12.5523 18 12 18C11.4477 18 11 17.5523 11 17V13H7C6.44772 13 6 12.5523 6 12C6 11.4477 6.44772 11 7 11H11V7C11 6.44772 11.4477 6 12 6Z"
+                                fill="currentColor"
+                            />
+                            <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M5 22C3.34315 22 2 20.6569 2 19V5C2 3.34315 3.34315 2 5 2H19C20.6569 2 22 3.34315 22 5V19C22 20.6569 20.6569 22 19 22H5ZM4 19C4 19.5523 4.44772 20 5 20H19C19.5523 20 20 19.5523 20 19V5C20 4.44772 19.5523 4 19 4H5C4.44772 4 4 4.44772 4 5V19Z"
+                                fill="currentColor"
+                            />
+                        </svg>
+                        <p class="text-xs">add new card</p>    
+                    </button>
+                    <button id="all-cards-view-btn" class="card-view ">
+                        <svg
+                        class=""
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        >
+                        <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M2 19C2 20.6569 3.34315 22 5 22H19C20.6569 22 22 20.6569 22 19V5C22 3.34315 20.6569 2 19 2H5C3.34315 2 2 3.34315 2 5V19ZM20 19C20 19.5523 19.5523 20 19 20H5C4.44772 20 4 19.5523 4 19V5C4 4.44772 4.44772 4 5 4H10V12.0111L12.395 12.0112L14.0001 9.86419L15.6051 12.0112H18.0001L18 4H19C19.5523 4 20 4.44772 20 5V19ZM16 4H12V9.33585L14.0001 6.66046L16 9.33571V4Z"
+                            fill="currentColor"
+                        />
+                        </svg>
+                        <p class="text-xs">see all cards</p>
+                    </button>
+                    <button id="update-profile-view-btn" class="card-view">
+                        <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            >
+                            <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M16 9C16 11.2091 14.2091 13 12 13C9.79086 13 8 11.2091 8 9C8 6.79086 9.79086 5 12 5C14.2091 5 16 6.79086 16 9ZM14 9C14 10.1046 13.1046 11 12 11C10.8954 11 10 10.1046 10 9C10 7.89543 10.8954 7 12 7C13.1046 7 14 7.89543 14 9Z"
+                                fill="currentColor"
+                            />
+                            <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M12 1C5.92487 1 1 5.92487 1 12C1 18.0751 5.92487 23 12 23C18.0751 23 23 18.0751 23 12C23 5.92487 18.0751 1 12 1ZM3 12C3 14.0902 3.71255 16.014 4.90798 17.5417C6.55245 15.3889 9.14627 14 12.0645 14C14.9448 14 17.5092 15.3531 19.1565 17.4583C20.313 15.9443 21 14.0524 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12ZM12 21C9.84977 21 7.87565 20.2459 6.32767 18.9878C7.59352 17.1812 9.69106 16 12.0645 16C14.4084 16 16.4833 17.1521 17.7538 18.9209C16.1939 20.2191 14.1881 21 12 21Z"
+                                fill="currentColor"
+                            />
+                        </svg>
+                        <p class="text-xs">update profile</p>
+                    </button>
+                </nav>
+            </div>
+            <!-- STUDY CARD VIEW -->
+            <div id="study-card-view" class="section-div">
+                <div class="flex flex-col w-full rounded bg-yellow-50 shadow">
+                    <div class=" bg-slate-500 rounded-tl rounded-tr">
+                        <p class="text-xs text-center pt-2 text-slate-300">STUDY FILTERS:</p>
+                        <div class="flex flex-row p-2 justify-center items-center text-white">
+    
+                            <button id="english" class="lng-btn-down">ENGLISH</button>
+                            <button id="chinese" class="lng-btn">CHINESE</button>
+                            <button id="pinyin" class="lng-btn">PINYIN</button>
+                            <button id="text" class="lng-btn">TEXT</button>
+                        </div>
+                        
+                    </div>
+                    <div id="card" class="flex flex-col p-3 w-full">
+                        <div id="mood-el" class="text-xs"></div>
+                        <div class="pt-2">
+                            <button id="to-english" class="text-xs text-slate-400 hover:text-slate-700">ENGLISH</button>
+                            <p id="english-el" class="text-sm p-3 border border-slate-200 rounded">...Loading...</p>
+                        </div>
+                        <div class="pt-2">
+                            <button id="to-chinese" class="text-xs text-slate-400  hover:text-slate-700 pt-2">CHINESE</button>
+                            <p id="chinese-el" class="text-sm p-3 border border-slate-200 rounded hidden">...Loading...</p>
+                        </div>
+                        <div class="pt-2">
+                            <button id="to-pinyin" class="text-xs text-slate-400 hover:text-slate-700 pt-2">PINYIN</button>
+                            <p id="pinyin-el" class="text-sm p-3 border border-slate-200 rounded hidden"></p> 
+                        </div>
+                        <div class="pt-2">
+                            <button id="to-examples" class="text-xs text-slate-400 hover:text-slate-700 py-2">TEXT</button>
+                            <p id="text-el" class="text-sm p-3 border border-slate-200 rounded hidden"></p> 
+                        </div>
+                        
+                                               
+                    </div>
+                    <div class="flex flex-row">
+                        <button id="correct-btn" class=" py-3 text-white w-full text-sm bg-green-600 hover:bg-green-100 hover:text-green-900">Correct</button>
+                        <button id="incorrect-btn" class=" py-3 text-white w-full text-sm bg-red-600 hover:bg-red-100 hover:text-red-900">Incorrect</button>
+                    </div>
+                    <div>
+                        <button id="skip-btn" class="py-3 text-black w-full text-sm bg-gray-200 hover:bg-gray-300 hover:text-gray-900 rounded">SKIP</button>
+                    </div>
+                </div>
+            </div>
+            <!-- ADD CARD VIEW -->
+            <div id="add-card-view" class="hidden section-div">
+                <div class="flex flex-col flex-grow bg-yellow-50 rounded gap-2 shadow ">
+                    <p class="text-base text-center pt-2">Confidence Level:</p>
+                    <div class="flex flex-row flex-shrink gap-3 pb-6 items-center justify-center">
+                        <button id="mood-1" class="mood-emoji-btn">
+                            <img src="assets/emojis/1.png">
+                            Awful
+                        </button>
+                        <button id="mood-2" class="mood-emoji-btn">
+                            <img src="assets/emojis/2.png">
+                            Bad
+                        </button>
+                        <button id="mood-3" class="mood-emoji-btn">
+                            <img src="assets/emojis/3.png">
+                            Meh
+                        </button>
+                        <button id="mood-4" class="mood-emoji-btn">
+                            <img src="assets/emojis/4.png">
+                            Good
+                        </button>
+                        <button id="mood-5" class="mood-emoji-btn">
+                            <img src="assets/emojis/5.png">
+                            Great
+                        </button>
+                    </div>
+                    
+                    <input id="card-input-eng" class="text-center bg-yellow-100 shadow-inner mx-4"  type="text" placeholder="English">
+                    <input id="card-input-chn" class="text-center bg-yellow-100 shadow-inner mx-4"  type="text" placeholder="Chinese">
+                    <input id="card-input-pin" class="text-center bg-yellow-100 shadow-inner mx-4"  type="text" placeholder="Pinyin">
+                    
+                    <textarea name="card-input-text" class="bg-yellow-100 shadow-inner p-2 mx-4" id="card-input-text" cols="30" rows="5" placeholder="Write down some examples"></textarea>
+                    <button id="add-card-btn" class="bg-slate-400 rounded text-small hover:bg-black hover:text-white w-3/4 mx-auto p-2 mb-2">Add Card</button>
+                </div>
+                
+            </div>
+            <!-- UPDATE PROFILE VIEW -->
+            <div id="update-profile-view" class="hidden section-div">
+                <div class="flex flex-col w-full gap-3 p-3 rounded bg-yellow-50 shadow ">
+                    <input id="display-name-input" class="bg-yellow-100 p-1 shadow-inner" type="text" placeholder="Display Name">
+                    <input id="photo-url-input" class="bg-yellow-100 p-1 shadow-inner" type="text" placeholder="Profile Photo URL">
+                    <button id="update-profile-btn" class="bg-slate-400 rounded text-xs hover:bg-slate-700 hover:text-white p-2">Update profile</button>
+                </div>
+                
+            </div>
+            <!-- ALL CARDS VIEW -->
+            <section id="all-cards-view" class="hidden section-div">
+                <div class="flex flex-col flex-grow">
+                    <section id="filters ">
+                        <div class="filters-and-posts-section mt-6 bg-yellow-50 shadow-md">
+                            <p class=" p-2 text-center text-xl">Star Level</p>
+                            <div class="filters-section flex flex-row flex-wrap justify-between p-2 ">
+                                <button id="filter-mood-1" class="filter-btn flex-1 mr-1">1</button>
+                                <button id="filter-mood-2" class="filter-btn flex-1 mx-1">2</button>
+                                <button id="filter-mood-3" class="filter-btn flex-1 mx-1">3</button>
+                                <button id="filter-mood-4" class="filter-btn flex-1 mx-1">4</button>
+                                <button id="filter-mood-5" class="filter-btn flex-1 ml-1">5</button>
+                                <button id="filter-mood-all" class="w-full filter-btn p-1 mt-3 ">Show all cards</button>
+                                
+                            </div>
+                            <div class="w-full px-2">
+                                
+                            </div>
+                            
+                        </div>
+                    </section>
+                    <div id="all-cards" class=""></div>
+                </div>
+                
+               
+            </section >
+            
+            <nav>
+                
+                <div class=" flex flex-row absolute top-0 right-0 p-4">
+                    <div id="user-section">
+                        <img src="assets/blank_user.png" id="user-profile-picture" class="w-14 h-14 mx-4 rounded-full border-2 border-slate-700" alt="">
+                    </div>
+                    <button id="sign-out-btn" class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">Log Out</button>
+                </div>
+                   
+            </nav>
+        </section>
+    </div>
+<script type="module" src="js/bundle.js"></script>
+<!-- <script type="module" src="js/functionUI.js"></script> -->
+
+</body>
+
+</html>
