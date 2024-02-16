@@ -313,8 +313,9 @@ export function adjustCardLanguage(event) {
     let lngState = event.target.id
     JS.cardState[lngState] ? JS.cardState[lngState] = false : JS.cardState[lngState] = true
 
+    console.log(event.target);
     event.target.classList.toggle('lng-btn-down');
-    event.target.classList.toggle('lng-btn');
+    event.target.classList.toggle('lng-btn-up');
   
 }
 
